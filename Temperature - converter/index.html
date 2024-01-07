@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temoerature Converter</title>
+    <style>
+    h1{
+        margin-top: 100px;
+        text-align: center;
+    }
+    #container{
+        height: 200px;
+        margin:20px 50px;
+        padding: 50px 100px;
+        background-color:rgb(180, 180, 180);
+        text-align: center;
+    }
+    .input{
+        display: inline-block;
+    }
+    input{
+        padding: 5px 10px;
+        margin: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    label{
+        font-size: 22px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <div id="container">
+        <div class="input">
+            <label>Celsius</label><br>
+            <input type="number" id="cel" value="0">
+        </div>
+        <div class="input">
+            <label>Fahrenheit</label><br>
+            <input type="number" id="feh" value="32">
+        </div>
+    </div>
+    <script>
+        let c=document.getElementById("cel");
+        let f=document.getElementById("feh");
+        c.addEventListener("input",function(){
+            let cel = this.value;
+            let feh = (cel * 9/5) + 32;
+            if(!Number.isInteger(feh)){
+                feh=feh.toFixed(4);
+            }
+            f.value = feh; 
+        })
+        f.addEventListener("input",function(){
+            let feh = this.value;
+            let cel = (feh - 32) * 5/9;
+             if(!Number.isInteger(cel)){
+                cel=cel.toFixed(4);
+            }
+            c.value = cel; 
+        })
+
+    </script>
+</body>
+</html>
