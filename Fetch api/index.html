@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th{
+        border: 2px solid black;
+        background-color: dimgrey;
+        padding: 20px;
+    }
+    td{
+        border: 1px solid black;
+        background-color: cornsilk;
+        padding: 20px;
+    }
+    img{
+        height: 30px;
+        width: auto;
+    }
+    .heading{
+        text-align: center;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        padding: 20px 0 20px;
+    }
+</style>
+<body>
+    <div class="heading">
+        <h2>Fetching Country's Data</h2>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Flag</th>
+                <th>Population (In Million)</th>
+                <th>Area (Square meters)</th>
+                <th>Calling code</th>
+                <th>Capital</th>
+                <th>Languages</th>
+            </tr>
+        </thead>
+        <tbody id="countries-table-body">
+
+        </tbody>
+    </table>
+</body>
+<script src="info.js"></script>
+</html>
