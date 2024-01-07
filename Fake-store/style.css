@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 150px;
+    height: auto;
+}
+.cards {
+    width: 330px;
+    height: auto;
+    border: 1px solid grey;
+    margin: 0 10px 10px 10px;
+    padding: 0 20px 20px 20px;
+}
+.cards .product-image{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards h2{
+    margin-bottom: 10px;
+}
+.price{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
